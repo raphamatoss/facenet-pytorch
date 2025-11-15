@@ -1,7 +1,7 @@
 import setuptools, os
 
 PACKAGE_NAME = 'facenet-pytorch'
-VERSION = '2.5.2'
+VERSION = '2.5.3'
 AUTHOR = 'Tim Esler'
 EMAIL = 'tim.esler@gmail.com'
 DESCRIPTION = 'Pretrained Pytorch face detection and recognition models'
@@ -36,11 +36,11 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     install_requires=[
-        'numpy>=1.24.0,<2.0.0',
+        'numpy>=2.1.2,<2.3.3',
         'Pillow>=10.2.0,<10.3.0',
         'requests>=2.0.0,<3.0.0',
-        'torch>=2.2.0,<=2.3.0',
-        'torchvision>=0.17.0,<=0.18.0',
-        'tqdm>=4.0.0,<5.0.0',
+        'torch>=2.2.2,<2.10.0',
+        'torchvision>=0.17.0,<0.25.0',
+        'tqdm>=4.64.1,<4.66.5',
     ],
 )
